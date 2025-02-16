@@ -5,4 +5,17 @@
 [https://dalija.prasnikar.info](https://dalija.prasnikar.info)
 
 
-Coming soon...
+## Part 6. Integration & Deployment
+
+### Chapter 37. Integration & Deployment Automation
+  
+  + build.bat
+  + MyProject.dpr
+  + MyProject.dproj
+  + MyProjectMainF.pas
+  + MyProjectMainF.fmx
+  + RunBatch.dpr
+  + RunBatch.dproj
+  + MainF.pas
+  + MainF.dfm
+
