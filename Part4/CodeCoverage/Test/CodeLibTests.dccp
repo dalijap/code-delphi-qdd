@@ -1,0 +1,44 @@
+<DCCProject xmlns="">
+  <VersionInfo>
+    <ApplicationVersion>V2.1.1 build 9</ApplicationVersion>
+    <FileFormatVersion>1</FileFormatVersion>
+  </VersionInfo>
+  <SourceCodeFiles>
+    <SourceBasePath>\CodeCoverage\</SourceBasePath>
+    <SourceFile Selected="False">Test\TestUnitFoo.pas</SourceFile>
+    <SourceFile Selected="False">Test\TestUnits.pas</SourceFile>
+    <SourceFile Selected="True">UnitBar.pas</SourceFile>
+    <SourceFile Selected="True">UnitFoo.pas</SourceFile>
+    <CodePage>0</CodePage>
+  </SourceCodeFiles>
+  <OutputSettings>
+    <ReportOutputFormats>ofHTML</ReportOutputFormats>
+    <ScriptOutputPath>\CodeCoverage\Test\Analysis</ScriptOutputPath>
+    <ReportOutputPath>\CodeCoverage\Test\Analysis</ReportOutputPath>
+    <DisplayEMMAExternally>False</DisplayEMMAExternally>
+    <DisplayXMLExternally>False</DisplayXMLExternally>
+    <DisplayHTMLExternally>True</DisplayHTMLExternally>
+    <XMLLineNumbers>False</XMLLineNumbers>
+    <XMLCombineLines>False</XMLCombineLines>
+    <XMLJacocoFormat>False</XMLJacocoFormat>
+  </OutputSettings>
+  <UnitTestFiles>
+    <ExecutableToAnalyze>\CodeCoverage\Test\Win32\Debug\CodeLibTests.exe</ExecutableToAnalyze>
+    <CommandLineParams></CommandLineParams>
+    <UseExeDirAsWorkingDir>True</UseExeDirAsWorkingDir>
+    <MapFile>\CodeCoverage\Test\Win32\Debug\CodeLibTests.map</MapFile>
+    <CodeCoverageExe>C:\Programs\Embarcadero\DelphiCodeCoverageWizard\Binaries\CodeCoverage.exe</CodeCoverageExe>
+  </UnitTestFiles>
+  <MiscSettings>
+    <UseRelativePaths>True</UseRelativePaths>
+    <AdditionalParams></AdditionalParams>
+    <AdditionalParamsIndex>0</AdditionalParamsIndex>
+    <ExcludedClassPrefixes></ExcludedClassPrefixes>
+    <LogToTextFile>False</LogToTextFile>
+    <LogToOutputDebugString>False</LogToOutputDebugString>
+    <PassThroughExitCode>False</PassThroughExitCode>
+    <UseNumberOfTimesLineExecutes>False</UseNumberOfTimesLineExecutes>
+    <NumberOfTimesLineExecutes>0</NumberOfTimesLineExecutes>
+    <IncludeFileExtension>False</IncludeFileExtension>
+  </MiscSettings>
+</DCCProject>

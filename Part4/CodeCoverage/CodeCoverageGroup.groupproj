@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BDC558CB-D10F-4E32-9380-05FD7B7A44C6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CodeLib.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Test\CodeLibTests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CodeLib">
+        <MSBuild Projects="CodeLib.dproj"/>
+    </Target>
+    <Target Name="CodeLib:Clean">
+        <MSBuild Projects="CodeLib.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CodeLib:Make">
+        <MSBuild Projects="CodeLib.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CodeLibTests">
+        <MSBuild Projects="Test\CodeLibTests.dproj"/>
+    </Target>
+    <Target Name="CodeLibTests:Clean">
+        <MSBuild Projects="Test\CodeLibTests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CodeLibTests:Make">
+        <MSBuild Projects="Test\CodeLibTests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CodeLib;CodeLibTests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CodeLib:Clean;CodeLibTests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CodeLib:Make;CodeLibTests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
